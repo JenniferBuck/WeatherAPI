@@ -1,0 +1,160 @@
+/* Reset/Globals/Helper classes */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	/* width: 90%; */
+	/* margin: ;
+	overflow: ; */
+}
+
+.me-flex {
+	display: flex;
+}
+
+.no-css {
+	display: none;
+}
+
+
+.widget-weather ul,
+.widget-weather ol {
+	list-style: none;
+}
+
+/* Typography */
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #222;
+	width: 90%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+.data-today,
+.forecast .frame-day ul {
+	font-size: 75%;
+}
+
+aside ol {
+	font-size: 70%;
+}
+
+.widget-weather header {
+	padding: 0.5em 0 0.75em 0;
+	color: #fff;
+	text-align: center;
+}
+
+.widget-weather header .hed {
+	font-size: 200%;
+}
+
+.widget-weather .data-today .hed {
+	margin-bottom: 1em;
+	font-size: 135%;
+	font-weight: bold;
+}
+
+.forecast .frame-day {
+	color: #fff;
+	overflow: auto;
+}
+
+.widget-weather h3 {
+	margin-bottom: 0.75em;
+}
+
+
+/* Layout */
+
+body {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-header {
+	margin-bottom: 2em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+.js-data-today {
+	margin-bottom: 1em;
+}
+
+aside {
+	padding-top: 1em;
+}
+
+aside label {
+	font-weight: bold;
+}
+
+.place-city {
+	padding: 1em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid red;
+	box-sizing: border-box;
+}
+
+
+.search-bar {
+	display: flex;
+}
+
+.widget-weather {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+}
+
+.widget-weather header {
+	grid-column: 1 / -1;
+	background-color: #333;
+
+}
+
+.widget-weather aside {
+	background-color: #f8f8f8;
+}
+
+.data-frame {
+	padding: 1em;
+}
+
+.data-today {
+	margin-bottom: 1em;
+	padding: 1.25em 1em 1em 1em;
+	border: 1px solid #999;
+}
+
+/* this is the li */
+.forecast .frame-day {
+	flex-grow: 1;
+	margin: 0 0.5em;
+	padding: 0.5em;
+	background-color: hsl(211, 100%, 50%);
+	-moz-box-shadow: inset 0 0 15px #777777;
+	-webkit-box-shadow: inset 0 0 15px #777777;
+	box-shadow: inset 0 0 15px #77777;
+	border-radius: 0.25em;
+}
+
+.forecast .frame-day:first-child {
+	margin-left: 0;
+}
+
+.forecast .frame-day:last-child {
+	margin-right: 0;
+}
+
+.page-footer {
+	margin-top: 1em;
+	text-align: center;
+}

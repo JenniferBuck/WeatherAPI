@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server-Side APIs - Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/momentsJS.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Welcome</h1>
+        <hr class="no-css">
+    </header>
+
+    <main>
+
+        <div class="widget widget-weather">
+
+            <header>
+                <h2 class="hed">Weather Dashboard</h2>
+            </header>
+
+            <aside>
+                <form>
+
+                    <label for="inp-search">Search for a City</label><br>
+                    <span class="search-bar">
+                        <input id="inp-search" type="search" name="user-search">
+                        <button type="submit">Q</button>
+                    </span>
+
+                    <ol class="search-history">
+
+                    </ol>
+                </form>
+            </aside>
+
+            <div class="data-frame">
+
+                <div class="js-data-today">
+                    <p class="hed"><time></time>☁️</p>
+                    <ul>
+                        <li>Temperature: <span class="js-temp"></span></li>
+                        <li>Humidity: <span class="js-humid"></span></li>
+                        <li>Wind Speed: <span class="js-wind"></span></li>
+                        <li>UV Index: <span class="js-uv"></span></li>
+                    </ul>
+                </div>
+
+                <section class="forecast _5day">
+                    <h3>5&ndash;Day Forecast:</h3>
+                    <ul class="me-flex">
+                        <li class="frame-day">
+                            <time datetime="">mm/dd/yyy</time>
+                            <div class="icon-frame">☁️</div>
+                            <ul>
+                                <li>Temp: <span class="js-temp"></span></li>
+                                <li>Humidity: <span class="js-humid"></span></li>
+                            </ul>
+                        </li>
+                        <li class="frame-day">
+                            <time datetime="">mm/dd/yyy</time>
+                            <div class="icon-frame">☁️</div>
+                            <ul>
+                                <li>Temp: <span class="js-temp"></span></li>
+                                <li>Humidity: <span class="js-humid"></span></li>
+                            </ul>
+                        </li>
+                        <li class="frame-day">
+                            <time datetime="">mm/dd/yyy</time>
+                            <div class="icon-frame">☁️</div>
+                            <ul>
+                                <li>Temp: <span class="js-temp"></span></li>
+                                <li>Humidity: <span class="js-humid"></span></li>
+                            </ul>
+                        </li>
+                        <li class="frame-day">
+                            <time datetime="">mm/dd/yyy</time>
+                            <div class="icon-frame">☁️</div>
+                            <ul>
+                                <li>Temp: <span class="js-temp"></span></li>
+                                <li>Humidity: <span class="js-humid"></span></li>
+                            </ul>
+                        </li>
+                        <li class="frame-day">
+                            <time datetime="">mm/dd/yyy</time>
+                            <div class="icon-frame">☁️</div>
+                            <ul>
+                                <li>Temp: <span class="js-temp"></span></li>
+                                <li>Humidity: <span class="js-humid"></span></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <hr class="no-css">
+        &copy; Jennifer Buck 2020. All Rights Reserved.
+    </footer>
+
+    <script src="js/main6.js"></script>
+</body>
+
+</html>
